@@ -8,8 +8,8 @@ namespace BatheneyPieShop.Model
 {
 	public interface IPieRepository
 	{
-		IEnumerable<Pie> AllPies { get; set; }
-		IEnumerable<Pie> PieOfTheWeek { get; set; }
+		IEnumerable<Pie> AllPies { get; }
+		IEnumerable<Pie> PieOfTheWeek { get; }
 		Pie GetPieById(int PieId);
 	}
 }

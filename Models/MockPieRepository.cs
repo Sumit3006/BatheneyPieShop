@@ -22,7 +22,6 @@ namespace BethanysPieShop.Models
 
         public IEnumerable<Pie> PiesOfTheWeek { get; }
         public IEnumerable<Pie> PieOfTheWeek { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        IEnumerable<Pie> IPieRepository.AllPies { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public Pie GetPieById(int pieId)
         {
