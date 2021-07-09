@@ -28,6 +28,8 @@ namespace BatheneyPieShop
 		{
 			services.AddRazorPages();
 			services.AddMvc();
+			services.AddDbContext<AppDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("Default Connection")));
 		    services.AddScoped<IPieRepository, MockPieRepository>();
 			services.AddScoped<ICategoryRepository, MockCategoryRepository>();
 		}
